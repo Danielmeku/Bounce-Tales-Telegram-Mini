@@ -9,14 +9,15 @@
   </head>
   <body>
     <main class="shell">
-      <header><a class="brand" href="./"><span class="brand-ball"></span> BOUNCE<span>ADVENTURE</span></a><span class="phase">FOUNDATION · PHASE 01</span></header>
+      <header><a class="brand" href="./"><span class="brand-ball"></span> BOUNCE<span>ADVENTURE</span></a><span class="phase">PLAYABLE ALPHA · PHASE 04</span></header>
       <section class="intro"><span class="eyebrow">A LITTLE BALL. A BIG ADVENTURE.</span><h1>Back to the bounce.</h1><p>A familiar feeling. A whole new world to explore.</p></section>
       <section class="game-card" aria-label="Bounce Adventure game">
-        <div class="game-bar"><span><i></i> GREENWOOD VALLEY</span><span>WORLD 01</span></div>
-        <div id="game" aria-label="Animated landscape with a red ball"></div>
-        <div class="game-footer"><span id="status" role="status">Your adventure starts here.</span><button id="play" type="button">Start adventure <span aria-hidden="true">↗</span></button></div>
+        <div class="game-bar"><label><i></i><select id="level" aria-label="Select level"></select></label><span id="world">WORLD 01</span></div>
+        <div id="game" aria-label="Side-scrolling red-ball platform game"></div>
+        <div class="game-footer"><span id="status" role="status">Collect coins. Dodge danger. Reach the flag.</span><button id="play" type="button">Start adventure <span aria-hidden="true">→</span></button></div>
+      <div class="controls"><div><button data-control="left" aria-label="Move left">←</button><button data-control="right" aria-label="Move right">→</button></div><span id="hud" role="status"></span><button data-control="jump" aria-label="Jump">Jump ↑</button></div>
       </section>
-      <section class="notes" aria-label="Development progress"><div><span>01 / THE FOUNDATION</span><p>A new world, taking shape.</p></div><p>This first preview sets the scene.<br />Movement, jumps, and exploration arrive in Phase 2.</p></section>
+      <section class="notes" aria-label="Development progress"><div><span>04 / YOUR FIRST ADVENTURE</span><p>Three worlds. One brave little ball.</p></div><p>Keyboard: ← → / A D to move. Space / ↑ / W to jump.<br />On mobile, hold the arrows and tap Jump. <button id="restart">Restart level</button></p></section>
       <footer>MADE FOR SMALL SCREENS & BIG ADVENTURES <span>BOUNCE ADVENTURE © 2026</span></footer>
     </main>
     <script type="module" src="/src/main.ts"></script>
